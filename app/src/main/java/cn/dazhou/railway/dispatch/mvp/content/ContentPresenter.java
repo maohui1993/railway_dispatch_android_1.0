@@ -28,7 +28,7 @@ public class ContentPresenter extends ContentContract.Presenter {
 
     public void getInfoFromServer() {
         SearchRecentSuggestions suggestions = new SearchRecentSuggestions(mContext,
-                SimpleSearchSuggestionsProvider.AUTHORITY, SimpleSearchSuggestionsProvider.MODE);
+                SimpleSearchSuggestionsProvider.AUTHORITY_CONTENT, SimpleSearchSuggestionsProvider.MODE);
         suggestions.saveRecentQuery("q2", null);
         suggestions.saveRecentQuery("asdf", null);
         suggestions.saveRecentQuery("qsdd", null);
@@ -74,7 +74,7 @@ public class ContentPresenter extends ContentContract.Presenter {
     public Cursor getRecentSuggestions(String query) {
         Uri.Builder uriBuilder = new Uri.Builder()
                 .scheme(ContentResolver.SCHEME_CONTENT)
-                .authority(SimpleSearchSuggestionsProvider.AUTHORITY);
+                .authority(SimpleSearchSuggestionsProvider.AUTHORITY_CONTENT);
 
         uriBuilder.appendPath(SearchManager.SUGGEST_URI_PATH_QUERY);
 
