@@ -25,11 +25,11 @@ public class WorkActivity extends BaseActivity {
                     ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), mFragment, R.id.contentFrame);
                     break;
                 case 1:
-                    mFragment = WorkStationFragment.newInstance(R.layout.fragment_work_train, WorkStationFragment.class);
+                    mFragment = WorkStationFragment.newInstance(R.layout.fragment_work_station, WorkStationFragment.class);
                     ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), mFragment, R.id.contentFrame);
                     break;
                 case 2:
-                    mFragment = WorkControllerCenterFragment.newInstance(R.layout.fragment_work_train, WorkControllerCenterFragment.class);
+                    mFragment = WorkControllerCenterFragment.newInstance(R.layout.fragment_work_controllercenter, WorkControllerCenterFragment.class);
                     ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), mFragment, R.id.contentFrame);
                     break;
                 default:
