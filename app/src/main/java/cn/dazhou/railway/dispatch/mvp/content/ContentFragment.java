@@ -17,7 +17,9 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 import cn.dazhou.commonlib.BaseFragment;
+import cn.dazhou.commonlib.util.Util;
 import cn.dazhou.railway.dispatch.R;
+import cn.dazhou.railway.dispatch.mvp.login.RegisterInfo;
 
 /**
  * @author Hooyee on 2018/1/27.
@@ -38,7 +40,7 @@ public class ContentFragment extends BaseFragment implements ContentContract.Vie
         mAdapter = new SearchSuggestionAdapter(getContext(), null, 0);
         mPresenter = new ContentPresenter(getContext(), this);
 
-        mSpinnerAdapter = new ArrayAdapter<String>(getContext(), R.layout.item_text_view);
+        mSpinnerAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_spinner_item);
         mSpinnerAdapter.addAll("站点1", "控制台", "车次");
     }
 
@@ -55,7 +57,7 @@ public class ContentFragment extends BaseFragment implements ContentContract.Vie
         });
         root.findViewById(R.id.bt_register).setOnClickListener(mPresenter);
 
-        mSpinner.setAdapter(mSpinnerAdapter);
+        mSpinner.setDropDownVerticalOffset(Util.dip2px(getContext(), 30));
         return root;
     }
 
@@ -102,8 +104,11 @@ public class ContentFragment extends BaseFragment implements ContentContract.Vie
     }
 
     @Override
-    public void setPresenter(ContentContract.Presenter presenter) {
-
+    public RegisterInfo getRegisterInfo() {
+        int type = (int) mSpinner.getSelectedItemId();
+        String train = mSearchView.getQuery().toString();
+        String date = mDateTx.getText().toString();
+        return new RegisterInfo(type, date, train);
     }
 
     @Override

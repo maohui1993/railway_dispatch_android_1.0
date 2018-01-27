@@ -21,19 +21,17 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity
-            android:name=".mvp.login.LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".mvp.login.LoginActivity"/>
         <activity
             android:name=".mvp.content.ContentActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -41,9 +39,11 @@
 
         <provider
             android:name=".mvp.content.SimpleSearchSuggestionsProvider"
-            android:authorities="document"></provider>
+            android:authorities="document" />
 
         <service android:name=".SipService" />
+
+        <activity android:name=".mvp.WorkActivity"></activity>
     </application>
 
 </manifest>

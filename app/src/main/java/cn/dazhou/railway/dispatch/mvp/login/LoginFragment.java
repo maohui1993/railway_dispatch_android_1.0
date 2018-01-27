@@ -47,8 +47,4 @@ public class LoginFragment extends BaseFragment implements LoginContract.View {
         return root;
     }
 
-    @Override
-    public void setPresenter(LoginContract.Presenter presenter) {
-
-    }
 }

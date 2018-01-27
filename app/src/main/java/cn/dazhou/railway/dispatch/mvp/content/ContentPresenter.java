@@ -8,9 +8,11 @@ import android.net.Uri;
 import android.provider.SearchRecentSuggestions;
 import android.view.View;
 
+import cn.dazhou.railway.dispatch.AppApplication;
 import cn.dazhou.railway.dispatch.R;
 import cn.dazhou.railway.dispatch.SipLauncher;
-import cn.dazhou.railway.dispatch.SipService;
+import cn.dazhou.railway.dispatch.mvp.WorkActivity;
+import cn.dazhou.railway.dispatch.mvp.login.RegisterInfo;
 import cn.dazhou.railway.dispatch.mvp.login.User;
 
 /**
@@ -88,12 +90,15 @@ public class ContentPresenter extends ContentContract.Presenter {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_register:
-                SipLauncher.getSipService(false)
-                        .init(mContext)
+                RegisterInfo info = mView.getRegisterInfo();
+                AppApplication.getInstance().info = info;
+//                SipLauncher.getSipService(false)
+//                        .init(mContext)
 //                        .username(loginUserInfo.getUsername())
 //                        .ipphone(loginUserInfo.getIpphone())
 //                        .setNativeService(SipService.class)
-                        .start();
+//                        .start();
+                WorkActivity.startActivity(mContext, WorkActivity.class);
                 break;
         }
     }

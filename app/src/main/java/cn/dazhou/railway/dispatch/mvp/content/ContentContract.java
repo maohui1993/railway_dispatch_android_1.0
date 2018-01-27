@@ -7,6 +7,7 @@ import android.support.v7.widget.SearchView;
 import cn.dazhou.commonlib.BasePresenterSupport;
 import cn.dazhou.commonlib.BaseView;
 import cn.dazhou.commonlib.bean.BaseModel;
+import cn.dazhou.railway.dispatch.mvp.login.RegisterInfo;
 import cn.dazhou.railway.dispatch.mvp.login.User;
 
 /**
@@ -28,5 +29,7 @@ public interface ContentContract {
         void swapCursor(Cursor cursor);
 
         void setSearchContent(int position);
+
+        RegisterInfo getRegisterInfo();
     }
 }

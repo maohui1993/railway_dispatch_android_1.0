@@ -7,7 +7,5 @@ import android.view.View;
  */
 
 public interface BaseView<T extends BasePresenter> {
-    void setPresenter(T t);
-
     View getView();
 }
