@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Hooyee@dazhou
+  ~
+  ~ Last modified 17-12-22 下午12:06.
+  ~
+  ~ author                             bug                             date                            comment
+  ~ Hooyee............................................................................. 2017/12/22..............................init
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:background="#4eb5fc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:hint="创建或选择组"
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_create_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_group" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:minHeight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

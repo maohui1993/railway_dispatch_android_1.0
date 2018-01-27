@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Hooyee@dazhou
+  ~
+  ~ Last modified 17-12-22 下午2:34.
+  ~
+  ~ author                             bug                             date                            comment
+  ~ Hooyee............................................................................. 2017/12/22..............................init
+  -->
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:minHeight="42dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@drawable/background_item"-->
+    <!--android:padding="8dp">-->
+
+    <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+<!--</LinearLayout>-->

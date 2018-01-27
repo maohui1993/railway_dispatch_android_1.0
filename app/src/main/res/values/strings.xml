@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">railway_dispatch_android_1.0</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="PROJECT_PATH">http://183.3.136.86:8087/railway_emergency/</string>
+    <string name="BASE_PATH">http://183.3.136.86:8087/</string>
+    <string name="REQUEST_USERQUERY_PATH">railway_emergency/ViewSysUserInfo/queryInfoByCondition</string>
+</resources>

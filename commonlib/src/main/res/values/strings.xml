@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">commonlib</string>
+    <string name="version_update">版本更新</string>
+    <string name="version_checkout">检测新版本</string>
+    <string name="version_force_update">需要强制更新</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="update">更新</string>
+    <string name="tip_newest_version">您已是最新版本</string>
+</resources>

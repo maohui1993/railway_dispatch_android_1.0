@@ -1,0 +1,1 @@
+include ':app', ':commonlib', ':sip', ':android-ngn-stack'

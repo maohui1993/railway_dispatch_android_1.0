@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2017. Hooyee@dazhou
+  ~
+  ~ Last modified 17-10-27 上午9:22.
+  ~
+  ~ author                             bug                             date                            comment
+  ~ Hooyee............................................................................. 2017/12/22..............................init
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_pressed="false" android:drawable="@color/colorWhite" />
+
+    <item android:state_pressed="true" android:drawable="@color/background_color" />
+</selector>

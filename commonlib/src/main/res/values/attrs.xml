@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Hooyee@dazhou
+  ~
+  ~ Last modified 17-12-21 下午4:48.
+  ~
+  ~ author                             bug                             date                            comment
+  ~ Hooyee............................................................................. 2017/12/21..............................init
+  -->
+
+<resources>
+    <declare-styleable name="StickRecyclerView">
+        <attr name="parent_background" format="color"></attr>
+        <attr name="child_background" format="color"></attr>
+        <attr name="child_layout_manager" format="enum">
+            <enum name="grid" value="0"></enum>
+            <enum name="linear" value="1"></enum>
+        </attr>
+        <attr name="title" format="string"/>
+        <attr name="titleSize" format="dimension" />
+        <attr name="titleColor" format="color" />
+        <attr name="bottomSrc" format="reference" />
+    </declare-styleable>
+</resources>

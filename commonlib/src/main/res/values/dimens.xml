@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. Hooyee@dazhou
+  ~
+  ~ Last modified 18-1-12 下午12:04.
+  ~
+  ~ author                             bug                             date                            comment
+  ~ Hooyee............................................................................. 2018/1/12..............................init
+  -->
+
+<resources>
+    <dimen name="padding_middle">20dp</dimen>
+</resources>
